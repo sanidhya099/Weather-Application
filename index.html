@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta charset="utf-8">
+  <!-- Linked JS File -->
+  <script type="module" src="js/index.js" defer></script>
+
+  <!-- Custom CSS Styles -->
+  <style>
+    /* Reset some default styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2; /* Light gray background */
+    }
+
+    /* Container Styles */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff; /* White background for the container */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle lift */
+      border-radius: 5px; /* Rounded corners */
+    }
+
+    /* Header Styles */
+    h1 {
+      text-align: center;
+      color: #0077b6; /* Professional blue color for the heading */
+      margin-bottom: 20px;
+    }
+
+    /* Form Styles */
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc; /* Light gray border */
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .btn-primary {
+      background-color: #0077b6; /* Professional blue color for the button */
+      color: #fff; /* White text color */
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    /* Weather Container Styles */
+    .weather-container {
+      text-align: center;
+      padding: 20px;
+      background-color: #f7f7f7; /* Lighter gray background */
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Weather App</h1>
+    <form id="weather-search">
+      <div class="row">
+        <div class="mb-3 col-9">
+          <input
+            name="city-name"
+            type="text"
+            class="form-control"
+            placeholder="Enter city name..."
+          >
+        </div>
+        <div class="mb-3 col-3">
+          <button type="submit" class="w-100 btn btn-primary">Search</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center">Current Weather</h2>
+        <div class="weather-container">
+          <div class="text-center">
+            Search for a city to display the weather
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
