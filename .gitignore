@@ -288,6 +288,9 @@ ehthumbs_vista.db
 # Dump file
 *.stackdump
 
+node_modules
+dist
+
 # Folder config file
 [Dd]esktop.ini
 
